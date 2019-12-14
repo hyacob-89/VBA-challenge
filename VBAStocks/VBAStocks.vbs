@@ -108,9 +108,7 @@ For Each ws In Worksheets
             
             ws.Range("P4").Value = ws.Cells(Match_Total_Volume, 9)
             
-            'Formatting
-
-            
+           
         Else
         
             TotalStockVolume = TotalStockVolume + ws.Cells(I, 7).Value
@@ -119,6 +117,9 @@ For Each ws In Worksheets
         End If
     
     Next I
+
+
+'Formatting
     
         ws.Columns("A:Q").AutoFit
         ws.Range("Q4").Value = Format(Max_Total_Volume, "Scientific")
