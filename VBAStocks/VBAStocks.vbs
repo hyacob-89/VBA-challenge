@@ -46,12 +46,6 @@ For Each ws In Worksheets
     Summary_Table_Row = 2
     TotalStockVolume = 0
     
-    
-    'Script check
-    'Dim WSName As String
-    'WSName = ws.Name
-    'MsgBox (ws.Name & PercentChange)
-    
 
 'Loop through all stocks data and compile data
     For I = 2 To LastRow
